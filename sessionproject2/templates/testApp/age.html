@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Age Registration Form</h1>
+    <form action="/gf">
+    {{form.as_p}}
+    {% csrf_token %}
+    <input type="submit" name="" value="Submit Age">
+    </form>
+  </body>
+</html>

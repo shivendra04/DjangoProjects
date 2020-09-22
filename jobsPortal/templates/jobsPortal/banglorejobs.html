@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static "css/demo.css" %}">
+    <title></title>
+  </head>
+  <body>
+    <h1>Welcome to Banglore jobs</h1>
+    {% if bnglrjobs_list %}
+    <table>
+      <thead>
+        <th>Date Posted</th>
+        <th>Company</th>
+        <th>Job Title</th>
+        <th>Eligibility</th>
+        <th>Address</th>
+        <th>Email</th>
+        <th>Mobile Number</th>
+      </thead>
+      {% for jobs in bnglrjobs_list %}
+      <tr>
+        <td>{{jobs.date}}</td>
+        <td>{{jobs.company}}</td>
+        <td>{{jobs.title}}</td>
+        <td>{{jobs.eligibility}}</td>
+        <td>{{jobs.address}}</td>
+        <td>{{jobs.email}}</td>
+        <td>{{jobs.phonenumber}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    {% else %}
+    <p>No Jobs Currently Available.</p>
+    {% endif %}
+  </body>
+</html>

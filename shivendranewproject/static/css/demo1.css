@@ -1,0 +1,8 @@
+.container .jumbotron{
+  color: green;
+  background: grey;
+  margin-top: 100px;
+}
+body{
+  background: url('https://unsplash.com/photos/mT3yDBiM2hQ');
+}

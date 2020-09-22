@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+{% for r in data_list %}
+<ul>
+  <li>{{r.name|upper}}</li>
+  <li>{{r.subject|upper}}</li>
+  <li>{{r.dept|upper}}</li>
+  <li>{{r.date}}</li>
+</ul><hr>
+{% endfor %}
+  </body>
+</html>

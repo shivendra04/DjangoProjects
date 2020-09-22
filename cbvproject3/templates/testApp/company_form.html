@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{%extends 'testApp/base.html'%}
+  {%block body_block%}
+    <h1>Employee Data Insert/Create Form</h1>
+    <form method="post">
+      {{form.as_p}}
+      {%csrf_token%}
+      <input type="submit" class="btn btn-lg btn-primary" name="" value="Insert/Update Employee Info">
+    </form>
+  {%endblock%}

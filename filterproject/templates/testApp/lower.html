@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    {% load cust_filter %}
+{% for r in data_list %}
+<ul>
+  <li>{{r.name|t_n:6}}</li>
+  <li>{{r.name|t_n:15}}</li>
+  <li>{{r.subject|lower}}</li>
+  <li>{{r.subject|truncate_file}}</li>
+  <li>{{r.dept|lower}}</li>
+  <li>{{r.date|date:'d-m-Y'}}</li>
+  <li>{{r.date|timesince}}</li>
+</ul><hr>
+{% endfor %}
+  </body>
+</html>

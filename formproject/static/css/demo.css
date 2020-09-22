@@ -1,0 +1,9 @@
+h1{
+  text-align: center;
+}
+body{
+  background: url(https://images.unsplash.com/photo-1523154410-31a6b052652b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=401&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:red;
+}
